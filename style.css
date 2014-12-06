@@ -3,5 +3,7 @@ background:#00f;
 color:#fff;
 border-left:10px solid #fff;
 }
-
-
+h1{
+	font-size: 6rem;
+	color: red;
+}
