@@ -8,7 +8,23 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="jquery.infinitescroll.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<script>
+$(function(){
+    $('#content').infinitescroll({
+        navSelector  : "div.navigation",
+            // ナビゲーション要素を指定します。
+        nextSelector : "div.navigation a",
+            // ナビゲーションの「次へ」の要素を指定します。
+        itemSelector : "#content div.post"
+            // コンテンツ要素を指定します。
+    });
+});
+</script>
+
+
 </head>
 <body>
 <H1>hello world</H1>
@@ -30,6 +46,35 @@
 	</div>
 </div>
 </div>
+
+
+<div id="content">
+<div class="post">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi error quas accusantium sunt aliquam tempora asperiores. Vel quia voluptatum nihil animi ratione autem cum illum culpa libero alias accusamus corporis consequuntur doloremque aliquid placeat esse rerum deserunt eaque est natus voluptate necessitatibus perferendis dignissimos iure veniam error aut deleniti obcaecati ea optio aliquam laudantium dolore aspernatur expedita odit nulla assumenda modi quod laboriosam sequi labore fugiat.</p>
+
+<p>Quia sequi tempore ad saepe voluptas quaerat facilis consectetur ullam quam esse ipsa ipsum. Expedita nulla facilis mollitia blanditiis vitae ad dolorum quasi incidunt dignissimos labore animi laudantium similique beatae eveniet fuga in laboriosam aliquam quo autem velit molestias sunt quam nemo enim tempore saepe ullam optio nihil iste architecto accusamus repellendus dolores eaque iusto culpa nobis asperiores temporibus rem explicabo possimus! Nisi consectetur soluta vero facere aut nemo minus vel laudantium cupiditate dolore quaerat itaque neque saepe ab libero fugit ex voluptatibus dolor quas veniam est ipsa eveniet provident aperiam nesciunt consequatur eius iusto inventore qui nihil animi ea debitis deleniti modi nobis cumque ut placeat quasi ad accusamus laborum illo.</p>
+
+<p> Amet nihil in cupiditate quis adipisci natus aut veritatis maxime ad corporis beatae maiores saepe illo nesciunt voluptate excepturi possimus tempore! Laborum?</p>
+<!-- /.post -->
+
+</div>
+
+//navSelector
+<div class="navigation">
+//nextSelector
+<a href="infinitescrolltest2.html">next page?</a>
+<!-- /.navigation --></div>
+<!-- /#content --></div>
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
