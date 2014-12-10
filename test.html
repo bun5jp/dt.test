@@ -5,11 +5,17 @@
 	<title>test-git</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 <link href="style.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+
 <script src="jquery.infinitescroll.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="jquery.simplesidebar.min.js"></script>
+<script src="masonry.pkgd.min.js"></script>
+<script src="main.js"></script>
+
+
 
 <script>
 $(function(){
@@ -23,12 +29,28 @@ $(function(){
     });
 });
 </script>
-
-
 </head>
 <body>
 <H1>hello world</H1>
 <h2>死ねほんだ</h2>
+
+
+ <div class="wrapper">
+    <!--content-->
+  </div>
+  
+  <section class="sidebar">
+
+    <div class="toolbar" style="margin-right: 0px; margin-left: 0px;">
+    <div id="open-sb" class="menu-button menu-left"></div>
+  </div>
+    <!--content-->
+  </section>
+  
+  <section class="navbar">
+    <div id="open-sb" class="menu-icon menu-button menu-left">
+  </section>
+
 
 <div class="container marketing">
 <div class="row">
@@ -47,16 +69,21 @@ $(function(){
 </div>
 </div>
 
-
+<div class="col-md-12">
 <div id="content">
 <div class="post">
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi error quas accusantium sunt aliquam tempora asperiores. Vel quia voluptatum nihil animi ratione autem cum illum culpa libero alias accusamus corporis consequuntur doloremque aliquid placeat esse rerum deserunt eaque est natus voluptate necessitatibus perferendis dignissimos iure veniam error aut deleniti obcaecati ea optio aliquam laudantium dolore aspernatur expedita odit nulla assumenda modi quod laboriosam sequi labore fugiat.</p>
-
-<p>Quia sequi tempore ad saepe voluptas quaerat facilis consectetur ullam quam esse ipsa ipsum. Expedita nulla facilis mollitia blanditiis vitae ad dolorum quasi incidunt dignissimos labore animi laudantium similique beatae eveniet fuga in laboriosam aliquam quo autem velit molestias sunt quam nemo enim tempore saepe ullam optio nihil iste architecto accusamus repellendus dolores eaque iusto culpa nobis asperiores temporibus rem explicabo possimus! Nisi consectetur soluta vero facere aut nemo minus vel laudantium cupiditate dolore quaerat itaque neque saepe ab libero fugit ex voluptatibus dolor quas veniam est ipsa eveniet provident aperiam nesciunt consequatur eius iusto inventore qui nihil animi ea debitis deleniti modi nobis cumque ut placeat quasi ad accusamus laborum illo.</p>
-
-<p> Amet nihil in cupiditate quis adipisci natus aut veritatis maxime ad corporis beatae maiores saepe illo nesciunt voluptate excepturi possimus tempore! Laborum?</p>
-<!-- /.post -->
-
+<p class="block"></p>
+<p class="block2"></p>
+<p class="block3"></p>
+<p class="block"></p>
+<p class="block2"></p>
+<p class="block3"></p>
+<p class="block"></p>
+<p class="block"></p>
+<p class="block"></p>
+<p class="block2"></p>
+<p class="block2"></p>
+</div>
 </div>
 
 //navSelector
@@ -74,7 +101,22 @@ $(function(){
 
 
 
-
+ <script>
+  $( ".sidebar" ).simpleSidebar({
+      settings: {
+        opener: "#open-sb",
+        wrapper: ".wrapper",
+        animation: {
+          easing: "easeOutQuint"
+        }
+      },
+      sidebar: {
+        align: "left",
+        width: 300,
+        closingLinks: 'a',
+      }
+    });
+  </script>
 
 </body>
 </html>

@@ -14,3 +14,27 @@ h1{
 	font-size: 4rem;
 
 }
+.post{
+
+}
+.block{
+	width: 100px;
+	height: 300px;
+	background-color: red;
+	float: left;
+	margin: 20px;
+	}
+.block2{
+	width: 100px;
+	height: 400px;
+	background-color: yellow;
+	float: left;
+	margin: 20px;
+	}
+.block3{
+	width: 100px;
+	height: 500px;
+	background-color: blue;
+	float: left;
+	margin: 20px;
+	}
