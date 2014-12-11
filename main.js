@@ -12,6 +12,10 @@ $('#content').infinitescroll({
         // ナビゲーションの「次へ」の要素を指定します。
     itemSelector : "#content div.post-group"
         // コンテンツ要素を指定します。
+},
+function( newElements ) {
+   var $newElems = $( newElements );
+   $('#content').masonry( 'appended', $newElems, true );
 });
 
 });
