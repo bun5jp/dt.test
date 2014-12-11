@@ -1,6 +1,7 @@
 $(function(){
 
-var msnry = new Masonry('#content',{
+var $content = $('#content');
+$content.masonry({
 	columnWidth: 10,
 	itemSelector: '.post'
 });
@@ -15,7 +16,7 @@ $('#content').infinitescroll({
 },
 function( newElements ) {
    var $newElems = $( newElements );
-   $('#content').masonry( 'appended', $newElems, true );
+   $content.masonry( 'appended', $newElems, true );
 });
 
 });
