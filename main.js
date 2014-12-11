@@ -5,4 +5,13 @@ var msnry = new Masonry('#content',{
 	itemSelector: '.post'
 });
 
+$('#content').infinitescroll({
+    navSelector  : "div.navigation",
+        // ナビゲーション要素を指定します。
+    nextSelector : "div.navigation a",
+        // ナビゲーションの「次へ」の要素を指定します。
+    itemSelector : "#content div.post-group"
+        // コンテンツ要素を指定します。
+});
+
 });
